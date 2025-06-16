@@ -5,11 +5,16 @@ https://velvety-kringle-cd45bb.netlify.app/
 Project Title
 🔐 Keepers app
 
-Description
+Description:
+
 A  web application built using Reactjs . Users can Create and Delete the Task according to his/her requirement .
+
 Project Structure
+
 client/ → Reactjs frontend
+
 README.md → This file
+
 Features
 - 📝 Simple form for adding the task 
 - 📦 simple Array structure for storing data 
