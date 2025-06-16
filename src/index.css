@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  position: relative; 
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 10px;
+}
+
+.heading{
+    padding-left: 1rem;
+ position: relative;
+
+ top: 0;
+margin-top: -15px;
+padding: 0.5rem;
+ width: 100%;
+  background-color: rgb(241, 103, 11);
+  font-weight: 800;
+  color: rgb(255, 253, 253);
+}
+
+.Note{
+    width: 40%;
+    margin-left: 0.8rem;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px 3px gray;
+    margin-top: 1rem;
+    margin-bottom: 10px;
+    padding: 1rem;
+}
+
+.createarea{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(172, 171, 171);
+    margin-top: 4rem;
+}
+
+.delete{
+
+    background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 15px;
+}
+
+form{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: rgba(22, 22, 22,0.6);
+    border-radius: 5%;
+    box-shadow: 4px 4px 4px white;
+    margin-top: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+   
+}
+
+input , textarea ,button{
+  padding-top: 0.5rem;
+  padding-bottom: 0.3rem;
+ font-size: 1.3rem;
+ margin-bottom: 1.8rem;
+}
+
