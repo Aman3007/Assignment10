@@ -1,6 +1,6 @@
-
+velvety-kringle-cd45bb.netlify.app
 # React + Vite
-"You can see how the application works by visiting this URL: velvety-kringle-cd45bb.netlify.app."
+"You can see how the application works by visiting the above URL"
 
 Project Title
 🔐 Keepers app
