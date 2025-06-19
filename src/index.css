@@ -2,6 +2,7 @@ body,html {
   margin: 0;
   padding: 0;
  height: 100%;
+ 
   box-sizing: border-box;
   overflow-x: hidden;
    
@@ -13,13 +14,11 @@ body,html {
   flex-direction: column;
 }
 .footer {
-  position: relative; 
-  bottom: 0;
-  width: 100%;
-  text-align: center;
+ text-align: center;
   background: #333;
   color: white;
   padding: 1rem;
+  
 }
 
 .heading{
@@ -46,12 +45,14 @@ padding: 0.5rem;
 }
 
 .createarea{
+  flex: 1;
     width: 100%;
+    
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgb(172, 171, 171);
-    margin-top: 4rem;
+
 }
 
 .delete{
@@ -69,17 +70,15 @@ padding: 0.5rem;
 }
 
 form{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    background-color: rgba(22, 22, 22,0.6);
-    border-radius: 5%;
-    box-shadow: 4px 4px 4px white;
-    margin-top: 2rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    margin-bottom: 2rem;
+ width: 100%;
+  max-width: 500px; 
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: rgba(22, 22, 22, 0.6);
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px white;
+  margin: 2rem auto;
    
 }
 
