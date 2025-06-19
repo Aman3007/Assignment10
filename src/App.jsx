@@ -27,14 +27,16 @@ setnotes((prev)=>{
 
 
  return(<>
+<div className='container'>
  <Header></Header>
-
+  
  <CreateArea onAdd={addNote}></CreateArea>
-   {notes.map((val,i)=>{
+ {notes.map((val,i)=>{
 return <Note title={val.title} content={val.content} key={i} id={i} ondelete={delnote}></Note>
  })
  }
 <Footer></Footer>
+</div>
  </>)
 }
 
