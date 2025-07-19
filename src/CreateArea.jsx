@@ -5,50 +5,53 @@ import Sdata from "./Notes";
 
 
 
-const CreateArea = (props) => {
-    const [note, addnote] = useState({
-        title: "",
-        content: ""
-    })
+const CreateArea = ({ onAdd }) => {
+  const [note, setNote] = useState({ title: "", content: "" });
 
-    const addingarea = (event) => {
-        const { name, value } = event.target;
-        
-       
-            addnote((prevvalue) => {
-                return {
-                    ...prevvalue,  // how to copy previous object data in new obj.
-                    [name]: value,
-                }
-            })
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setNote((prev) => ({ ...prev, [name]: value }));
+  };
 
-        
-
-    }
-
-    const addarea = (event) => {
-             if (!note.title || !note.content ) {
+  const submitNote = (e) => {
+    e.preventDefault();
+    if (!note.title || !note.content) {
       alert("Please fill in all fields before submitting.");
       return;
     }
-        props.onAdd(note)
-        addnote({
-            title: "",
-            content: ""
-        })
-        event.preventDefault();
-       
-    }
+    onAdd(note);
+    setNote({ title: "", content: "" });
+  };
 
-    return (<>
-        <div className="createarea">
-            <form onSubmit={addarea}>
-                <input placeholder="title" name="title" value={note.title} onChange={addingarea} ></input>
-                <textarea placeholder="content" name="content" value={note.content} onChange={addingarea} ></textarea>
-                <button type="submit">Add</button>
-            </form>
-        </div>
-
-    </>)
-}
+  return (
+    <div className="flex justify-center items-center bg-white-300 w-full">
+      <form
+        onSubmit={submitNote}
+        className="w-full max-w-md flex flex-col p-6 bg-black/40 text-black rounded-xl shadow-lg shadow-gray-500 my-6"
+      >
+        <input
+          type="text"
+          placeholder="Title"
+          name="title"
+          value={note.title}
+          onChange={handleChange}
+          className="text-lg p-2 mb-4 rounded"
+        />
+        <textarea
+          placeholder="Content"
+          name="content"
+          value={note.content}
+          onChange={handleChange}
+          className="text-lg p-2 mb-4 rounded"
+        ></textarea>
+        <button
+          type="submit"
+          className="bg-blue-500 text-white px-4 py-2 font-bold rounded hover:bg-blue-600 transition"
+        >
+          Add
+        </button>
+      </form>
+    </div>
+  );
+};
 export default CreateArea;

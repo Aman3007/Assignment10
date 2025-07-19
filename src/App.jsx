@@ -6,36 +6,36 @@ import Sdata from "./Notes";
 import CreateArea from './CreateArea';
 import { useState } from 'react';
 
-const App=()=> {
-const [notes , setnotes] =useState(Sdata)
+const App = () => {
+  const [notes, setNotes] = useState([]);
 
-const addNote=(note)=>{
-setnotes((prev)=>{
- return [...prev,note]    
- 
-})
-}
+  const addNote = (note) => {
+    setNotes((prev) => [...prev, note]);
+  };
 
-const delnote=(id)=>{
-setnotes((prev)=>{
- return prev.filter((val,i)=>{
-        return (i!=id)
- })   
- 
-})
-}
+  const deleteNote = (id) => {
+    setNotes((prev) => prev.filter((_, i) => i !== id));
+  };
 
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <CreateArea onAdd={addNote} />
+      <div className="flex flex-wrap gap-4.5">
+        {notes.map((val, i) => (
+          <Note
+            key={i}
+            id={i}
+            title={val.title}
+            content={val.content}
+            ondelete={deleteNote}
+          />
+        ))}
+      </div>
+      <Footer />
+    </div>
+  );
+};
 
- return(<>
- <Header></Header>
-   {notes.map((val,i)=>{
-return <Note title={val.title} content={val.content} key={i} id={i} ondelete={delnote}></Note>
- })
- }
- <CreateArea onAdd={addNote}></CreateArea>
+export default App;
 
-<Footer></Footer>
- </>)
-}
-
-export default App
