@@ -7,7 +7,7 @@ Project Title
 
 Description:
 
-A  web application built using Reactjs . Users can Create and Delete the Task according to his/her requirement .
+A  web application built using Reactjs and Tailwind CSS. Users can Create and Delete the Task according to his/her requirement .
 
 Project Structure
 
@@ -16,13 +16,13 @@ client/ → Reactjs frontend
 README.md → This file
 
 Features
-- 📝 Simple form for adding the task 
-- 📦 simple Array structure for storing data 
+- 📝 Simple form for adding the task  
 - 📄 Hooks for state management
 
 Tech Stack
 Frontend:
 - Reactjs
+- TailwindCSS
 
 
 Installation
