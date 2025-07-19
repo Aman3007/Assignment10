@@ -1,16 +1,39 @@
-<<<<<<< HEAD
+https://velvety-kringle-cd45bb.netlify.app/
 # React + Vite
+"You can see how the application works by visiting the above URL"
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project Title
+🔐 Keepers app
 
-Currently, two official plugins are available:
+Description:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A  web application built using Reactjs . Users can Create and Delete the Task according to his/her requirement .
 
-## Expanding the ESLint configuration
+Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Assignment10
->>>>>>> 125a7e9510a798f9b4446b1ccdb77f39fb3b7b42
+client/ → Reactjs frontend
+
+README.md → This file
+
+Features
+- 📝 Simple form for adding the task 
+- 📦 simple Array structure for storing data 
+- 📄 Hooks for state management
+
+Tech Stack
+Frontend:
+- Reactjs
+
+
+Installation
+1. Clone the repository
+```
+git clone https://github.com/Aman3007/Assignment10.git
+cd repo-name
+```
+
+
+**Aman Singh Chauhan**
+[GitHub](https://github.com/Aman3007)
+
+
