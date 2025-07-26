@@ -12,4 +12,5 @@
 
 .animate-slide {
   animation: slide 7s linear infinite;
+  white-space:nowrap;
 }
