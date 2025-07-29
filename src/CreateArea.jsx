@@ -40,7 +40,8 @@ const CreateArea = ({  onAdd, onEdit, editData, editingId, clearEdit  }) => {
         className="w-full max-w-md flex flex-col p-6 bg-black/40 text-black rounded-xl shadow-lg shadow-gray-500 my-6"
       >
         <input
-        id="title"
+        id="title" 
+          required
           type="text"
           placeholder="Title"
           name="title"
@@ -48,7 +49,7 @@ const CreateArea = ({  onAdd, onEdit, editData, editingId, clearEdit  }) => {
           onChange={handleChange}
           className="text-lg p-2 mb-4 rounded"
         />
-        <textarea
+        <textarea required
         id="content"
           placeholder="Content"
           name="content"
