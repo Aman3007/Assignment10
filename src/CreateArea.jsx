@@ -19,9 +19,24 @@ const CreateArea = ({  onAdd, onEdit, editData, editingId, clearEdit  }) => {
 
   const submitNote = (e) => {
     e.preventDefault();
-    if (!note.title || !note.content || note.title.trim()==""||note.content.trim()=="") {
-      alert("Please fill in all fields before submitting.");
+    if (!note.title ) {
+      alert("Please fill title fields before submitting.");
       return;
+    }
+    else if (note.title.trim()=="") {
+      alert("Empty title can not be added");
+      return;
+    }
+    else if (note.content.trim()=="") {
+      alert("Empty Content field can not be added");
+      return;
+    }
+    else if ( !note.content) {
+      alert("Please fill Content field efore adding.");
+      return;
+    }
+    else{
+      alert("successfully added..")
     }
     
     if (editingId !== null) {
