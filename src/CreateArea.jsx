@@ -19,7 +19,7 @@ const CreateArea = ({  onAdd, onEdit, editData, editingId, clearEdit  }) => {
 
   const submitNote = (e) => {
     e.preventDefault();
-    if (!note.title || !note.content) {
+    if (!note.title || !note.content || note.title.trim()==""||note.content.trim()=="") {
       alert("Please fill in all fields before submitting.");
       return;
     }
